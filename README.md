@@ -20,6 +20,10 @@ So to overcome this problem we have decided to integrate blockchain in election 
 4. Now the data will be send through blockchain and visible to all its members.
 5. An app will process all data from the blockchain and livetelecast of results will take place.
 
+## Pictorial representation of data flow:-
+
+![alt text](https://github.com/drumilpatel2000/CodeFunDo--BlockChain/blob/master/blockchain.png)
+
 ### Problems Vs Our Solution
  Using the above process we will solve all of listed problems and many more:
  1. **Transperancy** :- This will increase the transperancy and will prevent the spreading of hoaxes.
