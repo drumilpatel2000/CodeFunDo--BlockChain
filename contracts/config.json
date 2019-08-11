@@ -1,0 +1,89 @@
+{
+  "ApplicationName": "VotingApp",
+  "DisplayName": "Voting App",
+  "Description": "Application where voter casts a vote and get live updates of results",
+  "ApplicationRoles": [
+    {
+      "Name": "EVM",
+      "Description": "Device through which user casts a vote"
+    },
+    {
+      "Name": "Observer",
+      "Description": "Any authority or an individual which can see live updates"
+    }
+  ],
+  "Workflows": [
+    {
+      "Name": "Voting",
+      "DisplayName": "Voting",
+      "Description": "Main workflow where user casts a vote",
+      "Initiators": "EVM",
+      "StartState": "NULL",
+      "Properties": [
+        {
+          "Name": "State",
+          "DisplayNmae": "State",
+          "Description": "Holds the state of the vote",
+          "Type": {
+            "Name": "state"
+          }
+        },
+        {
+          "Name": "EVM",
+          "DisplayNmae": "EVM",
+          "Description": "device through which vote is casted",
+          "Type": {
+            "Name": "EVM"
+          }
+        },
+        {
+          "Name": "Description",
+          "DisplayNmae": "Description",
+          "Description": "entire details of a vote",
+          "Type": {
+            "Name": "object"
+          }
+        },
+
+        {
+          "Name": "Observer",
+          "DisplayNmae": "Observer",
+          "Description": "one who can see live updates",
+          "Type": {
+            "Name": "Observer"
+          }
+        }
+      ],
+      "Constructor": {
+        "Parameters": [
+          {
+            "Name": "description",
+            "DisplayName": "Description",
+            "Description": "details of vote",
+            "Type": {
+              "Name": "object"
+            }
+          }
+        ]
+      },
+      "Functions": [
+        {
+          "Name": "MakeVote",
+          "DisplayName": "Make Vote",
+          "Description": "Casts a vote",
+          "Parameters": [
+            {
+              "Name": "description",
+              "DisplayName": "Description",
+              "Description": "details of vote",
+              "Type": {
+                "Name": "object"
+              }
+            }
+          ]
+        }
+      ],
+      "States": [{}]
+    }
+  ]
+}
