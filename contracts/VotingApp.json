@@ -1,0 +1,105 @@
+{
+  "ApplicationName": "VotingApp",
+  "DisplayName": "Voting App",
+  "Description": "Application where voter casts a vote and get live updates of results",
+  "ApplicationRoles": [
+    {
+      "Name": "EVM",
+      "Description": "Device through which user casts a vote"
+    },
+    {
+      "Name": "Observer",
+      "Description": "Any authority or an individual which can see live updates"
+    }
+  ],
+  "Workflows": [
+    {
+      "Name": "Voting",
+      "DisplayName": "Voting",
+      "Description": "Main workflow where user casts a vote",
+      "Initiators": [ "EVM" ],
+      "StartState": "Voted",
+      "Properties": [
+        {
+          "Name": "State",
+          "DisplayName": "State",
+          "Description": "Holds the state of the vote",
+            "Type": {
+            "Name": "state"
+          }
+        },
+        {
+          "Name": "EVM",
+          "DisplayName": "EVM",
+          "Description": "device through which vote is casted",
+          "Type": {
+            "Name": "EVM"
+          }
+        },
+        {
+          "Name": "Party",
+          "DisplayName": "Party",
+          "Description": "Party to which vote is given",
+          "Type": {
+            "Name": "string"
+          }
+        },
+        {
+          "Name": "CandidateName",
+          "DisplayName": "Candidate Name",
+          "Description": "Candidate to which vote is given",
+          "Type": {
+            "Name": "string"
+          }
+        },
+        {
+          "Name": "Region",
+          "DisplayName": "Region",
+          "Description": "Region from which vote is given",
+          "Type": {
+            "Name": "string"
+          }
+        }
+        
+      ],
+      "Constructor": {
+        "Parameters": [
+          {
+            "Name": "Party",
+            "DisplayName": "Party",
+            "Description": "Party to which vote is given",
+            "Type": {
+              "Name": "string"
+            }
+          },
+          {
+            "Name": "CandidateName",
+            "DisplayName": "Candidate Name",
+            "Description": "Candidate to which vote is given",
+            "Type": {
+              "Name": "string"
+            }
+          },
+          {
+            "Name": "Region",
+            "DisplayName": "Region",
+            "Description": "Region from which vote is given",
+            "Type": {
+              "Name": "string"
+            }
+          }
+        ]
+      },
+      "States": [
+        {
+          "Name": "Voted",
+          "DisplayName": "Voted",
+          "Description": "Voting has been done",
+          "PercentComplete": 100,
+          "Style": "Success",
+          "Transitions": []
+        }
+      ]
+    }
+  ]
+}
