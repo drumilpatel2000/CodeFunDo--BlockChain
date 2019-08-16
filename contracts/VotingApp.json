@@ -14,17 +14,17 @@
   ],
   "Workflows": [
     {
-      "Name": "Voting",
+      "Name": "VotingApp",
       "DisplayName": "Voting",
       "Description": "Main workflow where user casts a vote",
-      "Initiators": [ "EVM" ],
+      "Initiators": ["EVM"],
       "StartState": "Voted",
       "Properties": [
         {
           "Name": "State",
           "DisplayName": "State",
           "Description": "Holds the state of the vote",
-            "Type": {
+          "Type": {
             "Name": "state"
           }
         },
@@ -60,12 +60,11 @@
             "Name": "string"
           }
         }
-        
       ],
       "Constructor": {
         "Parameters": [
           {
-            "Name": "Party",
+            "Name": "party",
             "DisplayName": "Party",
             "Description": "Party to which vote is given",
             "Type": {
@@ -73,7 +72,7 @@
             }
           },
           {
-            "Name": "CandidateName",
+            "Name": "candidateName",
             "DisplayName": "Candidate Name",
             "Description": "Candidate to which vote is given",
             "Type": {
@@ -81,7 +80,7 @@
             }
           },
           {
-            "Name": "Region",
+            "Name": "region",
             "DisplayName": "Region",
             "Description": "Region from which vote is given",
             "Type": {
