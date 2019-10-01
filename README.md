@@ -38,3 +38,4 @@ So to overcome this problem we have decided to integrate blockchain in election 
 3. Solidity will be used to create Smart contracts
 4. Visual Studio Code will be used as text editor with VS solidity as one of the extension 
 5. React will be used to provide UI for live telecasting of results
+6. Redux will be used for better management and smooth data flow.
