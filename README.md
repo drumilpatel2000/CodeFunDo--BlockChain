@@ -2,7 +2,7 @@
 ## EVM Hacking Accussation/Live Results 
 ------
 ### Background
-After every election results, there are claims that E.V.M.(Electronic Voting Machine) was tampered to make a party win the election or Election Commission was bribed to do so. Although such hoaxs have never been proved but such claims decreases trust on Election Commission and Government. So Election Commision should never be a single source of truth in any election. This will maintain trust on election commission.
+After every election results, there are claims that E.V.M.(Electronic Voting Machine) was tampered to make a party win the election or Election Commission was bribed to do so. Although such hoaxs have never been proved but such claims decreases trust on Election Commission and Government. So Election Commision should never be a single source of truth in any election. This will maintain trust on election commission and improve transparency of election process.
 
 ### Concept
 So to overcome this problem we have decided to integrate blockchain in election process.Our idea is as follows:
